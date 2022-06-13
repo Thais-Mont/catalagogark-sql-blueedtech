@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="css/style.css" />
+    <%- include('./components/head') %>
     <title>GARK-Cadastro</title>
   </head>
 
     <header>
-      <nav>
-        <img id="img-logo" src="./img/logo.png" alt="logo-gark" />
-        <ul>
-          <li><a href="/">HOME</a></li>
-          <li><a href="/#faixa-titulo">PRODUTOS</a></li>
-          <li><a href="/cadastro">CADASTRO</a></li>
-        </ul>
-      </nav>
+      <%- include('./components/nav') %>
     </header>
 
     <section id="faixa-titulo">
@@ -39,8 +28,8 @@
             </div>
 
             <div class="label-form">
-              <label for="dimensoes">Dimensões (LxA): </label>
-              <input type="text" name="dimensoes" id="dimensoes" required />
+              <label for="dimensao">Dimensões (LxA): </label>
+              <input type="text" name="dimensao" id="dimensao" required />
             </div>
 
             <div class="label-form">
@@ -67,11 +56,8 @@
 
       </section>
     </main>
-    <footer>
-      <a href="https://github.com/Thais-Mont" target="_blank"
-        >Thaís Monteiro -2022 &copy</a
-      >
-    </footer>
+
+    <%- include('./components/footer') %>
 
     <script src="js/script.js"></script>
     

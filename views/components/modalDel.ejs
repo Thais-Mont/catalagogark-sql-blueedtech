@@ -1,0 +1,19 @@
+<section class="modal-overlay" id="ovarlay">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <h3>Remover Produto</h3>
+      <a href="/" id="close-modal-put">X</a>
+    </div>
+
+    <div class="modal-body">
+      <div class="item-del">
+        <h2>Dejesa realmente deletar?</h2>
+        <span class="delecao"> <%= produtoDel.nome %> </span>
+      </div>
+      <div id="btns-del">
+        <a id="no" href="/">Não</a>
+        <a id="yes" href="/remove/<%= produtoDel.id %>">Sim</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<section class="modal-overlay" id="overlay">
+  <div class="modal" id="modal">
+
+    <div class="modal-header">
+      <h3>Atualizar Produto</h3>
+      <a href="/" id="close-modal-put">x</a>
+    </div>
+
+    <div class="modal-body">
+      <form action="/update/<%= produtoPut.id %>" method="post">
+
+        <div class="label-form">
+          <label for="nome">Nome do Produto: </label>
+          <input type="text" name="nome" id="nome" value= "<%= produtoPut.nome %>"/>
+        </div>
+
+        <div class="label-form">
+          <label for="dimensao">Dimensões (LxA): </label>
+          <input type="text" name="dimensao" id="dimensao" value= "<%= produtoPut.dimensao %>" />
+        </div>
+
+        <div class="label-form">
+          <label for="descricao">Descrição </label>
+          <input type="text" name="descricao" id="descricao" value= "<%= produtoPut.descricao %>" />
+        </div>
+
+        <div class="label-form">
+          <label for="preco">Preço R$: </label>
+          <input type="number" step="any" name="preco" id="preco" value= "<%= produtoPut.preco %>" />
+        </div>
+
+        <div class="label-form">
+          <label for="imagem">Link da Imagem: </label>
+          <input type="text" name="imagem" id="imagem" value= "<%= produtoPut.imagem %>" />
+        </div>
+
+        <div id="btn">
+          <button id="btnCadastro" type="submit">Atualizar</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</section>
