@@ -23,7 +23,7 @@ const Produto = connection.define(
       allowNull: false,
     },
     preco: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.FLOAT,
       allowNull: false,
     },
     imagem: {
