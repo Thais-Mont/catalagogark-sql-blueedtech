@@ -1,5 +1,4 @@
-# Projeto Catálago GARK - Pokedéx
-
+# Projeto Catálago GARK
 Projeto desenvolvido durante o curso de FullStack.
 Usando as tecnologias: HTML, CSS, JAVASCRIPT, EXPRESS.
 Produtos salvos em Memória Local nessa primeira etapa do projeto.
